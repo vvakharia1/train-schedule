@@ -1,10 +1,4 @@
 
-body {
-    /* background-image: url("https://img.pngio.com/train-tracks-advertising-background-sunset-clouds-baiyun-train-sunset-background-image-train-background-png-390_260.png"); */
-        /* margin: auto;
-        width: 80%; */
-}
-
 .img-background {
     background-image: url("http://wellworthsurgical.com/wp-content/uploads/parser/train-background-1.jpg");
     background-repeat: no-repeat;
@@ -37,6 +31,7 @@ form {
     border-radius: 4px;
     padding: 10px;
 }
+
 
 
 
