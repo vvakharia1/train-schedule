@@ -17,8 +17,28 @@ body {
 }
 
 header {
-    
+    background-color: darkgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 4px;
+
 }
+
+.card-header {
+    background-color: blue;
+    color: white;
+}
+
+form {
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
 
 
 
