@@ -92,6 +92,13 @@
 
     </div>
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
 <script type="text/javascript">
 // JQUERY & JAVASCRIPT HERE
 
@@ -130,9 +137,31 @@ var trainInfo = {
     frequency: trainFreq,
 };
 
+// 1.4 Add the train object above to the database function in firebase
+
+database.ref().push(trainInfo);
+
+// 1.5 Console log user input 
+console.log(trainInfo.name);
+console.log(trainInfo.destination);
+console.log(trainInfo.time);
+console.log(trainInfo.frequency);
+
+});
+
+// 1.6 Add train info to firebase datase and appen to html
+
+database.ref().on("child_added", function(childSnapshot) {
+    console.log(childSnapshot.val());
+
+
 
 
 })
+
+
+
+
 
 
 
